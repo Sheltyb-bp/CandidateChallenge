@@ -43,13 +43,20 @@ is at following locations:
 - The project file `AutomationTestSample.csproj` defines the `SpaProxyServerUrl` and the `SpaProxyLaunchCommand`
 
 
-## Automation Framework: Local Execution
+## Automation Framework: Specflow BDD Local Execution
 
-Automation Specflow Projects added to Solution: AutomationTestsBDDSpecflow
+Automation Specflow Projects added to Solution: 
+- AutomationTestsBDDSpecflow.cproj
 
-Prerequisites Tools NUPackages:
+Prerequisites Tools through Manage NUGet Packages:
 * Open AutomationTestsBDDSpecflow.csproj in VS
-* Dependencies --> Packages ensure all NUGET Install Specflow
+* See VS Project Dependencies --> Manage NUGet Packages 
+- Specflow.*
+- DotNetSeleniumExtras
+- Selenium.*
+- Selenium.WebDriver.*
+- ExtentReporst.Core
+- NUnit.*
 
 
 To execute locally:
