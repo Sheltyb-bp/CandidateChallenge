@@ -9,7 +9,7 @@ namespace AutomationTestsBDDSpecflow.Pages
     {
 
         private IWebElement SubmitButton => Driver.FindControl(By.XPath("/html/body/app-root/body/div/app-new-order/form/div/div[2]/div/button[1]"));
-        private IWebElement CancelButton => Driver.FindControl(By.XPath("/html/body/app-root/body/div/app-new-order/form/div/div[2]/div/button[1]"));
+        private IWebElement CancelButton => Driver.FindControl(By.XPath("/html/body/app-root/body/div/app-new-order/form/div/div[2]/div/button[2]"));
         private IWebElement NewOrderPageHeading => Driver.FindControl(By.Id("tableLabel"));
         public void CancelButtonClick()
         {
