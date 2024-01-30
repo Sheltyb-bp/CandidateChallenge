@@ -43,3 +43,19 @@ is at following locations:
 - The project file `AutomationTestSample.csproj` defines the `SpaProxyServerUrl` and the `SpaProxyLaunchCommand`
 
 
+## Automation Framework: Local Execution
+
+Automation Specflow Projects added to Solution: AutomationTestsBDDSpecflow
+
+Prerequisites Tools NUPackages:
+* Open AutomationTestsBDDSpecflow.csproj in VS
+* Dependencies --> Packages ensure all NUGET Install Specflow
+
+
+To execute locally:
+* Ensure the application is executing by by entering
+- cd dotnet run
+- from your browser enter:   https://localhost:7150/ 
+* Open VS --> View menu option --> Test Explorer
+- Run All the Tests using the Test Explorer Run option 
+- or Run individual Scenarios by right clicking on a BDD Scenario and selecting Run
