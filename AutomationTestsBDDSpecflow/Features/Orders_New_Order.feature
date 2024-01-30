@@ -11,7 +11,7 @@ Scenario: Orders - New Order - Create New Order and Cancel with no details
 	When I navigate to the Orders page via the Orders URL
 	When I Create a New Order 
 	And I cancel the New Order before submitting
-	And I expect to see the Orders Worklist page
+	Then I expect to see the Orders Worklist page
 
 @Web
 @Orders_New_Order
