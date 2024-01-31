@@ -52,13 +52,19 @@ namespace AutomationTestsBDDSpecflow.Steps
         [When(@"I fill in the New Patient details with valid values")]
         public void WhenIFillInTheNewPatientDetailsWithValidValues()
         {
-            throw new PendingStepException();
+            NewOrderPage.EnterPatientMRN("Test");
+            NewOrderPage.EnterPatientFirstName("Test");
+            NewOrderPage.EnterPatientLastName("Test");
         }
 
         [When(@"I fill in the Study Details valid values")]
         public void WhenIFillInTheStudyDetailsValidValues()
         {
-            throw new PendingStepException();
+            NewOrderPage.EnterStudyAccessionNumber("T");
+            NewOrderPage.EnterStudyOrganistion("L");
+            NewOrderPage.EnterStudySiteID("N");
+            NewOrderPage.EnterStudyModality("M");
+
         }
 
         [When(@"I cancel the New Order before submitting")]
